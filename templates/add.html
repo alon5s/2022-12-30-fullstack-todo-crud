@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    <form action="/add" method="post">
+        <fieldset>
+            <legend>Add Task</legend>
+            Category
+            <input type="text" name="category">
+            <br><br>
+            Choose Date & Time
+            <input type="datetime-local" name="date_time" />
+            <br><br>
+            Description
+            <input type="text" name="desc" />
+            <br><br>
+            <input type="submit" value="Add">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    <form action="/update_task/{{task.tid}}" method="post">
+        <fieldset>
+            <legend>Update Task</legend>
+            Category
+            <input type="text" name="category" value="{{ task.name }}">
+            <br><br>
+            Choose Date & Time
+            <input type="datetime-local" name="date_time" value="{{ task.date }}">
+            <br><br>
+            Description
+            <input type="text" name="desc" value="{{ task.description }}">
+            <br><br>
+            <input type="submit" value="Update">
+        </fieldset>
+    </form>
+</body>
+
+</html>

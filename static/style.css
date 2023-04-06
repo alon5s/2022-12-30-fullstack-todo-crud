@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.headlines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    background-color: lightgray;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+
+b{
+    margin-right: 90px;
+    padding-left: 2.5px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.text{
+    margin-right: 100px;
+}
+
+.navbar{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
